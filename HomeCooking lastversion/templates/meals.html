@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+{% block title %}Meals{% endblock %}
+
+{% block content %}
+<section id="meals"data-nav-section="meals">
+  <h3  class="text-center pt-3 " style="font-size: 2rem;font-family:adobe-garamond-pro" ><b> MENU OF THE DAY</b></h3>
+      <hr class="hr1 mx-auto">
+      <H1  id="Salads"data-nav-section="Salads" class="text-center  " style="font-size: 1.5rem;font-family:adobe-garamond-pro ;">Salads & Condiments </H1>
+      <hr class="hr1 mx-auto">  
+  <!-- <div class="row mx-auto container-fluid"> -->
+  <!-- <section>
+    <div class="row mx-auto container-fluid"> 
+      {% for repas in repas %}
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          
+          <img class="img-fluid  mb-3" src="{{ repas.image}}" alt="">
+          <h5 class="p-title">{{ repas.title }}</h5>
+          <h5 class="p-categorie">{{ repas.categorie }}</h5>
+          <h5 class="p-price">{{ repas.price }}dh</h5>
+
+            <hr> -->
+          <!-- <p class="mt-4">
+            <a href="{{ url_for('vue', id=produit.id) }}" class="btnvue">
+              <i class="fas fa-eye"></i> vue
+            </a>
+            {% if produit.stock > 0 %}
+            <a href="{{ url_for( 'Ajoutrapid', id=produit.id) }}" class="btnadd">
+              <i class="fas fa-shopping-cart"></i>Ajouter au panier
+            </a>
+            {% endif %}
+          </p> -->
+        <!-- </div>
+        {% endfor%} 
+    </div>
+  </section>
+</section> -->
+  <!-- <section id="Meat"data-nav-section="Meat">
+    <h3  class="text-center pt-3 " style="font-size: 2rem;font-family:adobe-garamond-pro"> Meat </h3>
+    <div class="container text-center py-4">
+        <h3> Meat,Poultry & Fish</h3>   
+        <hr class="hr1 mx-auto">
+        <p>Ici vous pouvez consulter nos nouveaux produits à un prix raisonnable</p>       
+    </div>
+    -->
+    <!-- <section id="Meat"data-nav-section="Meat">
+    <h3  class="text-center pt-3 " style="font-size: 2rem;font-family:adobe-garamond-pro"> Meat </h3>
+      <div class="row mx-auto container-fluid"> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+
+        {% for produit in produits %}
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid imProduit mb-3" src="{{ produit.image}}" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">{{ produit.nom }}</h5>
+            <h5 class="p-price">{{ produit.prix }}dh</h5>
+              <hr>
+            <p class="mt-4">
+              <a href="{{ url_for('vue', id=produit.id) }}" class="btnvue">
+                <i class="fas fa-eye"></i> vue
+              </a>
+              {% if produit.stock > 0 %}
+              <a href="{{ url_for( 'Ajoutrapid', id=produit.id) }}" class="btnadd">
+                <i class="fas fa-shopping-cart"></i>Ajouter au panier
+              </a>
+              {% endif %}
+            </p>
+          </div>
+          {% endfor%} 
+      </div> -->
+    <!-- </section> -->
+  <!-- </section> -->
+  <!-- <section id="Sweets"data-nav-section="Sweets" >
+    <div class="container text-center py-4">
+        <h3> Sweets </h3>   
+        <hr class="hr1 mx-auto">
+        <p>Ici vous pouvez consulter nos nouveaux produits à un prix raisonnable</p>       
+    </div>
+    -->
+    <!-- <section id="Sweets"data-nav-section="Sweets" >
+    <h3  class="text-center pt-3 " style="font-size: 2rem;font-family:adobe-garamond-pro"> Sweets </h3>
+      <div class="row mx-auto container-fluid"> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente, eveniet fuga deleniti perferendis culpa id rem atque labore eum delectus laboriosam vero quo magni quod similique voluptatum. Dignissimos, at.</p>
+
+        {% for produit in produits %}
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid imProduit mb-3" src="{{ produit.image}}" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">{{ produit.nom }}</h5>
+            <h5 class="p-price">{{ produit.prix }}dh</h5>
+              <hr>
+            <p class="mt-4">
+              <a href="{{ url_for('vue', id=produit.id) }}" class="btnvue">
+                <i class="fas fa-eye"></i> vue
+              </a>
+              {% if produit.stock > 0 %}
+              <a href="{{ url_for( 'Ajoutrapid', id=produit.id) }}" class="btnadd">
+                <i class="fas fa-shopping-cart"></i>Ajouter au panier
+              </a>
+              {% endif %}
+            </p>
+          </div>
+          {% endfor%} 
+      </div>
+    </section>
+  </section> -->
+<div class="container">
+      <div class="row" >
+                    <div class="col-lg-4 col-md-6 col-xd12">
+                      <a  href="/onemeal"> <img src="/static/images/Salads/AMLOU WARM GOATS CHEESE SALAD.jpeg"
+                         class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                        <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>AMLOU WARM GOATS CHEESE SALAD:</b><br>
+                        <h3 style="font-size: 2rem;color: red;text-align:left; "><b>40 DH</b> </h3>
+                      </p>
+                    </div> 
+                    <div class="col-lg-4 col-md-6 col-xd12">
+                      <a  href="/onemeal"> <img src="/static/images/Salads/MOROCCAN MEDLEY SALAD BOWL.jpg"
+                         class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                        <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>MOROCCAN MEDLEY SALAD BOWL</b><br>
+                        <h3 style="font-size: 2rem;color: red;text-align:left;"><b>40 DH</b> </h3>
+                      </p>
+                    </div> 
+                    <div class="col-lg-4 col-md-6 col-xd12">
+                      <a  href="/onemeal"> <img src="/static/images/Salads/Moroccan Chicken Kebabs + Fennel and Orange Herb Salad.jpeg"
+                         class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                        <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>Moroccan Chicken Kebabs + Fennel and Orange Herb Salad</b><br>
+                        <h3 style="font-size: 2rem;color: red;text-align:left; "><b>60 DH</b> </h3>
+                      </p>
+                    </div>         
+                               
+      </div>
+</div>
+      <hr class="hr1 mx-auto">
+      <H1  id="Meat"data-nav-section="Meat" class="text-center  " style="font-size: 1.4rem;font-family:adobe-garamond-pro ;">Meat, Poultry and Fish </H1>
+      <hr class="hr1 mx-auto">
+<div class="container">
+        <div class="row">
+                    <div class="col-lg-4 col-md-6 col-xd12">
+                      <a  href="/onemeal"> <img src="/static/images/Meat/CHERMOULA PRAWNS AND CALAMARI WITH TOMATOES AND AVOCADO.jpeg"
+                        class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                        <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>CHERMOULA PRAWNS AND CALAMARI WITH TOMATOES AND AVOCADO</b><br>
+                        <h3 style="font-size: 2rem;color: red;text-align:left; "><b>60 DH</b> </h3>
+                      </p>
+                    </div>   
+                    <div class="col-lg-4 col-md-6 col-xd12">
+                      <a  href="/onemeal1"> <img src="/static/images/Meat/RFISSA EXPRESS – FRAGRANT CHICKEN AND LENTILS WITH PAPARDELLE.jpg"
+                         class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                        <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>RFISSA EXPRESS – FRAGRANT CHICKEN AND LENTILS WITH PAPARDELLE</b><br>
+                        <h3 style="font-size: 2rem;color: red;text-align:left; "><b>60 DH</b> </h3>
+                      </p>
+                    </div>   
+                    <div class="col-lg-4 col-md-6 col-xd12">
+                      <a  href="/onemeal"> <img src="/static/images/Meat/SHRIMP, PRESERVED LEMON AND SAFFRON MAC AND CHEESE.jpg"
+                         class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                        <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>SHRIMP, PRESERVED LEMON AND SAFFRON MAC AND CHEESE</b><br>
+                        <h3 style="font-size: 2rem;color: red;text-align:left; "><b>60 DH</b> </h3>
+                      </p>
+                    </div>   
+            </div>
+        </div>
+        <hr class="hr1 mx-auto">
+        <H1  id="Sweets"data-nav-section="Sweets" class="text-center  " style="font-size: 1.4rem;font-family:adobe-garamond-pro ;">Sweets </H1>
+        <hr class="hr1 mx-auto">
+  <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-xd12">
+              <a  href="/onemeal"> <img src="/static/images/Sweet/FEKKAS CEREALS (MINI BISCOTTIS).jpg"
+                 class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>FEKKAS CEREALS (MINI BISCOTTIS)</b><br>
+                <h3 style="font-size: 2rem;color: red;text-align:left; "><b>30 DH</b> </h3>
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xd12">
+              <a  href="/onemeal"> <img src="/static/images/Sweet/MOROCCAN PANCAKE LAYER CAKE - BAGHRIR CAKE.jpeg"
+                 class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>MOROCCAN PANCAKE LAYER CAKE - BAGHRIR CAKE</b><br>
+                <h3 style="font-size: 2rem;color: red;text-align:left; "><b>30 DH</b> </h3>
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xd12">
+              <a  href="/onemeal"> <img src="/static/images/Sweet/TURMERIC AND HONEY GRANOLA.jpeg"
+                 class="img-fluid image-responsive  img-thumbnail" alt="Home" ></a>
+                <p style="font-size: 1.2rem;font-family:adobe-garamond-pro ;"><b>TURMERIC AND HONEY GRANOLA</b><br>
+                <h3 style="font-size: 2rem;color: red;text-align:left; "><b>35 DH</b> </h3>
+              </p>
+            </div>
+              </div>
+          </div>
+    </div>
+{% endblock content %}
